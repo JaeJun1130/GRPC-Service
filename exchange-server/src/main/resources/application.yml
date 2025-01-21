@@ -1,0 +1,12 @@
+grpc:
+  server:
+    port: 9090 # GRPC ??? ?? ??? ??
+
+spring:
+  application:
+    name: exchange-server # ?????? ??
+
+logging:
+  level:
+    root: INFO
+    com.java.exchangeserver: DEBUG

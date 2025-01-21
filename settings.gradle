@@ -1,0 +1,5 @@
+rootProject.name = 'grpc-service'
+
+include 'exchange-api'
+include 'exchange-client'
+include 'exchange-server'

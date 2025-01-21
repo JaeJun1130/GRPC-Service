@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_package = "com.java.exchange";
+option java_outer_classname = "ExchangeServiceProto";
+
+service ExchangeService {
+  rpc GetExchangeRate (ExchangeRequest) returns (ExchangeResponse);
+}
+
+message ExchangeRequest {
+  string currency_code = 1; // 요청할 통화 코드 (예: "USD")
+}
+
+message ExchangeResponse {
+  string currency_code = 1; // 통화 코드
+  float exchange_rate = 2;  // 환율
+}
