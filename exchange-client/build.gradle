@@ -17,10 +17,24 @@ repositories {
 	mavenCentral()
 }
 
+ext {
+	set('springGrpcVersion', "0.3.0")
+}
+
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation project(':exchange-api') // exchange-api 모듈 의존성 추가
+
+	implementation 'io.grpc:grpc-services'
+	implementation 'org.springframework.grpc:spring-grpc-spring-boot-starter'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.grpc:spring-grpc-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+dependencyManagement {
+	imports {
+		mavenBom "org.springframework.grpc:spring-grpc-dependencies:${springGrpcVersion}"
+	}
 }
 
 tasks.named('test') {
