@@ -32,7 +32,7 @@ dependencies {
 protobuf {
 	protoc {
 		artifact = 'com.google.protobuf:protoc:3.25.0' // Protobuf 컴파일러 버전
-	g
+	}
 	plugins {
 		grpc {
 			artifact = 'io.grpc:protoc-gen-grpc-java:1.56.0' // gRPC 플러그인 버전
