@@ -11,11 +11,9 @@
 │   │   │   │   └── com
 │   │   │   │       └── java
 │   │   │   │           └── exchange
-│   │   │   │               └── ExchangeServiceProto.java
 │   │   │   └── proto
 │   │   │       └── exchange.proto
 │   │   └── resources
-│   │       └── application.properties
 ├── exchange-client
 │   ├── build.gradle
 │   ├── src
