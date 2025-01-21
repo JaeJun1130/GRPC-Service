@@ -56,3 +56,7 @@
 ### 3. **Exchange Client**
 - REST API 엔드포인트를 제공하여 사용자가 요청할 수 있는 클라이언트 역할을 합니다.
 - REST API 요청을 받아 gRPC 클라이언트를 통해 서버와 통신하여 결과를 반환합니다.
+
+
+![image](https://github.com/user-attachments/assets/886cf841-81d5-446e-a060-cb86c83d2138)
+
